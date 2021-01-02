@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body section#tag {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+
+body section#tag div#happy {
+    background-color: rgb(211, 101, 101);
+    height: 500px;
+    width: 350px;
+    display: flex;
+    margin: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 2s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example {
+    0% {background-color: rgb(211, 101, 101);}
+    10%   {background-color: rgb(91, 163, 139);}
+    20%  {background-color: rgb(207, 207, 40);}
+    30%  {background-color: rgb(89, 89, 150);}
+    40% {background-color: rgb(74, 170, 74);}
+    50% {background-color: rgb(211, 101, 101);}
+    60%   {background-color: rgb(107, 185, 159);}
+    70%  {background-color: rgb(207, 207, 40);}
+    80%  {background-color: rgb(89, 89, 150);}
+    90% {background-color: rgb(74, 170, 74);}
+    100% {background-color: rgb(194, 133, 108);}
+}
+
+p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+p#fontLetters {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+
+#image {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
+
+#image > img {
+    position: absolute; 
+    bottom: -100px;
+}
